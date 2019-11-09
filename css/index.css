@@ -49,3 +49,22 @@ body{
 .container .footer{
     grid-area: footer;
 }
+@media screen and (max-width: 768px){
+    .container{
+        grid-template-areas: "header header header"
+                        "contenido contenido contenido"
+                        "aside aside aside"
+                        "widget-1 widget-2 widget-2"
+                        "footer footer footer";
+    }
+}
+@media screen and (max-width: 375px){
+    .container{
+        grid-template-areas: "header header header"
+                        "contenido contenido contenido"
+                        "aside aside aside"
+                        "widget-1 widget-1 widget-1"
+                        "widget-2 widget-2 widget-2"
+                        "footer footer footer";
+    }
+}
